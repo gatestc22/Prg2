@@ -6,10 +6,17 @@ public class SpellChecker {
     static SpellingTree mytree;
 
     public static void main(String[] args) throws FileNotFoundException {
-        // TODO: check to see if this is how you do files
         String filename = "TestFile";
         Scanner sc = new Scanner(new File(filename));
+        PrintWriter pw = new PrintWriter(new File("OutputFile"));
         mytree = new SpellingTree();
+
+        while (sc.hasNext()) {
+            pw.println(sc.nextLine());
+        }
+
+        sc.close();
+        pw.close();
 
         // TODO: readWords
         // TODO: printWords
@@ -19,6 +26,7 @@ public class SpellChecker {
 
     public static int checkWords(String filename) {
         // TODO
+
         return 0; // STUD
     }
 

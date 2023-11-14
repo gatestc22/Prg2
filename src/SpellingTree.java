@@ -30,13 +30,6 @@ public class SpellingTree {
             }
             System.out.println(c.getChildAt(subWord.charAt(i)));
         }
-
-        for (int i = 0; i < subWord.length(); i++) {
-            if (addWord(subWord)) {
-
-            }
-            //c.getChildAt();
-        }
     }
 
 }
